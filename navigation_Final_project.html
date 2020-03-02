@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>WindMill-ChessClub</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+            background-color: #ccc;
+
+            font-family: arial;
+            font-size: 18px;
+
+    }
+
+    .menu {
+        background-color: #2d3e50;
+
+        display: flex;
+        list-style: none;
+
+    }
+
+    .menu a {
+
+
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        color: #fff;
+    }
+
+    .menu li:not(:first-child) {
+
+            border-left: 1px solid #3b4d61;
+
+
+
+}
+
+    .menu li:not(:last-child) {
+
+        border-right: 1px solid #12202d;
+    }
+    .menu li:hover {
+        background-color: #3b4d61;
+
+    }
+
+    /*drop menu*/
+
+    .menu li {
+        position: relative;
+    }
+
+    .menu li ul {
+        min-width: 150px;
+        list-style: none;
+        display: none;
+        position: absolute;
+        background-color: #2d3e50;
+
+    }
+
+    .menu li:hover > ul {
+        display:block
+    }
+    .menu  > li:not(:first-child) {
+        border-right: 1px solid;
+        
+    }
+    .menu ul ul {
+        top: 0;
+        left: 100%;
+    }
+    
+
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li>
+            <a href="#">События</a>
+        
+            <ul>
+                <li><a href="#">Квалификационные турниры</a></li>
+                <li><a href="#">Другие события</a>
+
+                        <!--<ul>
+                            <li><a href="#">Menu 2.2.1</a></li>
+                            <li>
+                                <a href="#">Menu 2.2.2</a>
+                                <ul>
+                                    <li><a href="#">Menu 2.2.2.1</a></li>
+                                </ul>
+                                
+
+                            </li>
+                        </ul>
+
+                </li>
+                <li><a href="#">Menu 2.3</a></li>
+                <li><a href="#">Menu 2.4</a></li>-->
+            </ul>
+        
+        
+        
+        </li>
+        <li><a href="#">Контакты</a></li>
+        <li>
+            <a href="#">Клуб</a>
+
+
+            <ul>
+                <li><a href="#">О клубе</a></li>
+                <li><a href="#">Участники</a></li>
+                <li><a href="#">Галерея</a></li>
+            </ul>
+        
+        
+        
+        </li>
+
+        <li>
+            <a href="#">Вопросы и ответы</a>
+
+
+            <ul>
+                <li><a href="#">Родителям</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Сайты партнёров</a></li>
+            </ul>
+        
+        
+        
+        </li>
+    </ul>
+
+
+
+
+    
+</body>
+</html>
